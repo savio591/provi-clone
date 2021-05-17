@@ -3,6 +3,9 @@
 My project consists in clone the landing page of [Provi].
 I want to use my habilities with Pure CSS, Javascript/Typescript, and ReactJS
 
+## Planning
+The plannings and moods logs are available in [PLAN.md](./PLAN.md)
+
 ## Instructions provided by Provi:
 
 ### Description

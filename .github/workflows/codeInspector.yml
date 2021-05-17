@@ -2,8 +2,6 @@ name: Code Quality Inspector
 
 on: [push]
 
-workflow_dispatch:
-
 jobs:
   check-quality:
     runs-on: ubuntu-latest

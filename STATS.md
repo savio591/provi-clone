@@ -1,14 +1,19 @@
 # Stats
 Details of the time spent on this project
 
-## All Plannings: 4h | 8 cycles
-### 1st: 2 cycles
-### 2nd: 1 cycle
-### 3rd: 3 cycles
-### 4th: 2 cycles
+* 1 cycle = 25min(5 or 15min resting for each cycle)
+
+## All Plannings: 9 cycles
+* 1st: 2 cycles (16/05)
+* 2nd: 1 cycle (17/05)
+* 3rd: 4 cycles (18/05)
+* 4th: 0 cycles
 
 ## Prototiping on [Figma]: 19 cycles | ~10h
-### Each component: x9 | ~2 cycles | ~50min
+* Desktop - Each component: x9 | ~2 cycles | ~50min
+
+## Initialize: 1 cycle
+* Env. Amb: 1 cycle
 
 
 [Figma]: https://www.figma.com/file/wUBzhofzIoWjlNo0ZdNbZ1/Provi-Challenge?node-id=0%3A1

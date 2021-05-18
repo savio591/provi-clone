@@ -32,11 +32,13 @@ Good luck! <3
 - [x] Comment the finished links on this [issue](https://github.com/savio591/provi-clone/issues/5)
 - [x] With the Figma project finished, you will be able to describe and understand the components, structure, and actions. So, you can create the backlogs/issues based on your Figma elements, components, and pages.
 - [x] Register your work times, use each pomodoro cycle as metrics.
-- [ ] Put your pomo cycles in a new article, called [STATS.md]
+- [x] Put your pomo cycles in a new article, called [STATS.md]
 
 ## Third planning:
 
-All the new plans will be described on [issues] page.
+* [ ] List the components and pages and create the backlogs on [issues] page
+* [ ] All the new plans will be described on [issues] page.
+
 
 
 

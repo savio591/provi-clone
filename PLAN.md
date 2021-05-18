@@ -19,16 +19,33 @@ Planning of backlogs and development process.
 * [x] Try to plan this app in your mind
 * [x] Create the [milestones] on github section
 * [x] Create a code quality test for control
-* [x] Continue the development and documentation, actions on [Dev](https://github.com/savio591/provi-clone/tree/dev) branch 
+* [x] Continue the development and documentation, actions on [Dev] branch 
 
 Good luck! <3
 
 
 
+## Second planning:
+
+### Recreate the [Provi]'s landing page on figma:
+- [x] Recreate the Provi landing page on a draft in [Figma]
+- [x] Comment the finished links on this [issue](https://github.com/savio591/provi-clone/issues/5)
+- [x] With the Figma project finished, you will be able to describe and understand the components, structure, and actions. So, you can create the backlogs/issues based on your Figma elements, components, and pages.
+- [x] Register your work times, use each pomodoro cycle as metrics.
+- [ ] Put your pomo cycles in a new article, called [STATS.md]
+
+## Third planning:
+
+All the new plans will be described on [issues] page.
 
 
 
+[Figma]: https://www.figma.com/file/wUBzhofzIoWjlNo0ZdNbZ1/Provi-Challenge?node-id=0%3A1
+[Dev]: https://github.com/savio591/provi-clone/tree/dev
 
 [projects]: https://github.com/savio591/provi-clone/projects/1
 [issues]: https://github.com/savio591/provi-clone/issues
 [milestones]: https://github.com/savio591/provi-clone/milestones
+[STATS.md]: ./stats.md
+
+[Provi]: https://provi.com.br

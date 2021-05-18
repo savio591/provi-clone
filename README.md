@@ -1,10 +1,14 @@
 # Provi Challenge
+[![Good Code Quality](https://github.com/savio591/provi-clone/actions/workflows/codeInspector.yml/badge.svg?branch=dev)](https://github.com/savio591/provi-clone/actions/workflows/codeInspector.yml)
 
 My project consists in clone the landing page of [Provi].
 I want to use my habilities with Pure CSS, Javascript/Typescript, and ReactJS
 
 ## Planning
 The plannings and moods logs are available in [PLAN.md](./PLAN.md)
+
+## Stats: 
+The plannings and moods logs are available in [STATS.md](./STATS.md)
 
 ## Instructions provided by Provi:
 
@@ -32,6 +36,8 @@ One of the extra deliverables for this challenge is to create a [storybook] with
 ### Just finished? 💯
 Great work! Send it to [luciano@provi.com.br], [dev@provi.com.br] and [gian@provi.com.br]
 and you will receive and answer back from our side in 3 business days 🏃🏃
+
+
 
 [Provi]: https://provi.com.br/
 [storybook]: https://github.com/storybooks/storybook

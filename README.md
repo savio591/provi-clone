@@ -4,6 +4,33 @@
 My project consists in clone the landing page of [Provi].
 I want to use my habilities with Pure CSS, Javascript/Typescript, and ReactJS
 
+## Objectives:
+
+### Show my habilities with:
+  * Create prototypes with [Figma]
+  * Good domain of Git system and Github funcionalities
+  * HTML/CSS/JS knowledge
+  * Domain of Typescript/ReactJS
+  * Domain of ReactJS functionalities, especially with props and component systems.
+  * Automated tests with Jest
+
+## Starting the development
+
+* A deploy build is available on my [site](https://savilexperiments.com.br/dualbank).
+
+* To serve on local machine, install dependencies with ``yarn`` or ``npm`` and start with ``yarn dev`` or `npm run dev`. Webpack will serve the webpage on port ``9000``
+
+* To build, run `build` with yarn or npm, so, it will creates and pack up build on `/dist` folder ready to deploy.
+
+## Stacks🚀
+
+* Node/Yarn
+* ReactJS
+* Typescript
+* Webpack
+* Babel
+* Styled Components(CSS/SASS on JS)
+
 ## Planning
 The plannings and moods logs are available in [PLAN.md](./PLAN.md)
 
@@ -38,7 +65,7 @@ Great work! Send it to [luciano@provi.com.br], [dev@provi.com.br] and [gian@prov
 and you will receive and answer back from our side in 3 business days 🏃🏃
 
 
-
+[Figma]: https://www.figma.com/
 [Provi]: https://provi.com.br/
 [storybook]: https://github.com/storybooks/storybook
 [jest]: https://jestjs.io/

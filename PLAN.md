@@ -39,6 +39,12 @@ Good luck! <3
 * [ ] List the components and pages and create the backlogs on [issues] page
 * [ ] All the new plans will be described on [issues] page.
 
+### Coding:
+
+* [x] Routes: Create "Home Page" #12
+  * [x] Create the routes with react-dom and replace the hello world test
+  * [x] Create the home page on '/pages/home' and put it on the default path route as an exact component.
+  * [x] Put a "Hello world!" on this page and test.
 
 
 

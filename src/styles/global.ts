@@ -134,16 +134,43 @@ font-size: 1rem;
 line-height: 1.25rem;
 display: flex;
 align-items: center;
-text-decoration-line: underline;
+text-decoration-line: none;
 
 color: #FFFFFF;
 }
 
-h1.blue, h2.blue, h3.blue, p.blue, a.blue {
+a.textLink12 {
+font-size: 0.75rem;
+line-height: 1rem;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}
+
+a.hover {
+  transition: .2s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+div.text12 {
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+span.underline, a.underline {
+  text-decoration-line: underline;
+}
+
+h1.blue, h2.blue, h3.blue, p.blue, a.blue, span.blue {
   color: var(--blue);
 }
 
-h1.magenta, h2.magenta, h3.magenta, p.magenta, a.magenta {
+h1.magenta, h2.magenta, h3.magenta, p.magenta, a.magenta, span.magenta {
   color: var(--magenta);
 }
 
@@ -153,6 +180,16 @@ h1.center, p.center, h2.center {
 
 h1.left, h2.left, p.left{
   text-align: left;
+}
+
+ul {
+  list-style: none;
+}
+
+div.separator {
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
 }
 
 .react-modal-overlay {

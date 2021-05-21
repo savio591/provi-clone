@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { Container } from "./styles";
 
 import logo_wide_whiteImg from "../../assets/logo_wide_white.svg";
-
 import linkedin_circular_whiteImg from "../../assets/linkedin_circular_white.svg";
 import instagram_circular_whiteImg from "../../assets/instagram_circular_white.svg";
 import facebook_circular_whiteImg from "../../assets/facebook_circular_white.svg";

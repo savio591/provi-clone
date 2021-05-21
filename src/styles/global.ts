@@ -20,7 +20,7 @@ html {
         font-size: 93.75%
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 1138px) {
         font-size: 87.5%
     }
 }
@@ -70,8 +70,8 @@ button.clean {
 h1.text60 {
   font-style: normal;
   font-weight: normal;
-  font-size: 60px;
-  line-height: 74px;
+  font-size: 3.75rem;
+  line-height: 4.625rem;
 
   color: #FFFFFF;
 }
@@ -79,36 +79,36 @@ h1.text60 {
 h1.text48 {
   font-style: normal;
   font-weight: normal;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 3rem;
+  line-height: 3.75rem;
 
   color: #FFFFFF;
 }
 
 h1.text38, h2.text38 {
-  font-size: 38px;
-  line-height: 47px;
+  font-size: 2.375rem;
+  line-height: 3rem;
 
   color: #FFFFFF;
 }
 
 h1.text30 {
-  font-size: 30px;
-line-height: 36px;
+  font-size: 1.875rem;
+line-height: 2.25rem;
 
 color: #ffffff
 }
 
 h2.text24, p.text24 {
 font-size: 1.5rem;
-line-height: 30px;
+line-height: 1.875rem;
 
 color: #FFFFFF;
 }
 
 p.text24_38 {
   font-size: 1.5rem;
-line-height: 38px;
+line-height: 2.375rem;
 
 color: #FFFFFF;
 }
@@ -119,8 +119,8 @@ span {
   }
 
 p.text20 {
-font-size: 20px;
-line-height: 25px;
+font-size: 1.25rem;
+line-height: 1.5rem;
 text-align: center;
 
 color: #FFFFFF;
@@ -157,8 +157,8 @@ a.hover {
 }
 
 div.text12 {
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
   color: #ffffff;
 }
 
@@ -203,7 +203,7 @@ div.separator {
 .react-modal-content {
   width: 100%;
   height: 100vh;
-  max-height: 720px;
+  max-height: 71.25rem;
   
   background: transparent;
   padding: 0;

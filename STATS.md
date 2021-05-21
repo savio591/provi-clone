@@ -3,13 +3,13 @@ Details of the time spent on this project
 
 * 1 cycle = 25min(5 or 15min resting for each cycle)
 
-## Total: 30 cycles
+## Total: 63 cycles
 
 ## All Plannings: 9 cycles
 * 1st: 2 cycles (16/05)
 * 2nd: 1 cycle (17/05)
 * 3rd: 4 cycles (18/05)
-* 4th: 0 cycles
+* 4th: 2 cycles (20/05)
 
 ## Prototiping on [Figma]: 19 cycles | ~10h
 * Desktop - Each component: x9 | ~2 cycles | ~50min
@@ -19,9 +19,10 @@ Details of the time spent on this project
 * Documentations updates: 1 cycle
 * Listing backlogs: 1 cycles
 
-## Components: 23 cycles
+## Components: 32 cycles
 * Header: 9 cycles
 * Landing Container: 20 cycles
+* Footer: 3 cycles
 * Keen-slider: 4 cycles;
 
 [Figma]: https://www.figma.com/file/wUBzhofzIoWjlNo0ZdNbZ1/Provi-Challenge?node-id=0%3A1

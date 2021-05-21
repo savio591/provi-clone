@@ -4,6 +4,7 @@ import { Header } from "../components/Header";
 import { MobileMenuModal } from "../components/Header/MobileMenuModal";
 import { useState } from "react";
 import { LandingContainer } from "../components/LandingContainer";
+import { Footer } from "../components/Footer";
 
 export function Home() {
   const [isMenuModalActive, setIsMenuModalActive] = useState(false);
@@ -24,6 +25,7 @@ export function Home() {
         onRequestClose={handleCloseMenuModal}
       />
       <LandingContainer />
+      <Footer />
       <GlobalStyle />
     </>
   );

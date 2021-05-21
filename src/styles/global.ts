@@ -20,7 +20,7 @@ html {
         font-size: 93.75%
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 1138px) {
         font-size: 87.5%
     }
 }
@@ -70,8 +70,8 @@ button.clean {
 h1.text60 {
   font-style: normal;
   font-weight: normal;
-  font-size: 60px;
-  line-height: 74px;
+  font-size: 3.75rem;
+  line-height: 4.625rem;
 
   color: #FFFFFF;
 }
@@ -79,36 +79,36 @@ h1.text60 {
 h1.text48 {
   font-style: normal;
   font-weight: normal;
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 3rem;
+  line-height: 3.75rem;
 
   color: #FFFFFF;
 }
 
 h1.text38, h2.text38 {
-  font-size: 38px;
-  line-height: 47px;
+  font-size: 2.375rem;
+  line-height: 3rem;
 
   color: #FFFFFF;
 }
 
 h1.text30 {
-  font-size: 30px;
-line-height: 36px;
+  font-size: 1.875rem;
+line-height: 2.25rem;
 
 color: #ffffff
 }
 
 h2.text24, p.text24 {
 font-size: 1.5rem;
-line-height: 30px;
+line-height: 1.875rem;
 
 color: #FFFFFF;
 }
 
 p.text24_38 {
   font-size: 1.5rem;
-line-height: 38px;
+line-height: 2.375rem;
 
 color: #FFFFFF;
 }
@@ -119,8 +119,8 @@ span {
   }
 
 p.text20 {
-font-size: 20px;
-line-height: 25px;
+font-size: 1.25rem;
+line-height: 1.5rem;
 text-align: center;
 
 color: #FFFFFF;
@@ -134,16 +134,43 @@ font-size: 1rem;
 line-height: 1.25rem;
 display: flex;
 align-items: center;
-text-decoration-line: underline;
+text-decoration-line: none;
 
 color: #FFFFFF;
 }
 
-h1.blue, h2.blue, h3.blue, p.blue, a.blue {
+a.textLink12 {
+font-size: 0.75rem;
+line-height: 1rem;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}
+
+a.hover {
+  transition: .2s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+div.text12 {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  color: #ffffff;
+}
+
+span.underline, a.underline {
+  text-decoration-line: underline;
+}
+
+h1.blue, h2.blue, h3.blue, p.blue, a.blue, span.blue {
   color: var(--blue);
 }
 
-h1.magenta, h2.magenta, h3.magenta, p.magenta, a.magenta {
+h1.magenta, h2.magenta, h3.magenta, p.magenta, a.magenta, span.magenta {
   color: var(--magenta);
 }
 
@@ -153,6 +180,16 @@ h1.center, p.center, h2.center {
 
 h1.left, h2.left, p.left{
   text-align: left;
+}
+
+ul {
+  list-style: none;
+}
+
+div.separator {
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
 }
 
 .react-modal-overlay {
@@ -166,7 +203,7 @@ h1.left, h2.left, p.left{
 .react-modal-content {
   width: 100%;
   height: 100vh;
-  max-height: 720px;
+  max-height: 71.25rem;
   
   background: transparent;
   padding: 0;

@@ -1,4 +1,3 @@
-import { useKeenSlider } from "keen-slider/react";
 import { ReactNode, RefObject } from "react";
 
 interface KeenSliderProps {

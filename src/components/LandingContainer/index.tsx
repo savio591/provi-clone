@@ -23,10 +23,12 @@ import linkedin_circularImg from "../../assets/linkedin_circular.png";
 import arrow_left_circularImg from "../../assets/arrow_left_circular.svg";
 
 import phoneGif from "../../assets/phone.gif";
+
 import { KeenSlider } from "../KeenSlider";
 import { useKeenSlider } from "keen-slider/react";
 
 export function LandingContainer() {
+  
   const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
     loop: false,
     duration: 1000,

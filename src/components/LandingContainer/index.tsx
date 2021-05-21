@@ -33,7 +33,7 @@ export function LandingContainer() {
           Revolucionando a educação{" "}
           <span>através de crédito descomplicado.</span>
         </h1>
-        <Link to="./" className="textLink16">
+        <Link to="./" className="textLink16 underline">
           Quero Transformar a minha carreira
         </Link>
       </div>
@@ -228,7 +228,7 @@ export function LandingContainer() {
             O aluno só paga <span>depois que começa a trabalhar.</span> Loucura?
             Transformação da realidade brasileira. Só muda quem acredita.
           </p>
-          <Link to="./" className="textLink16 blue">
+          <Link to="./" className="textLink16 underline blue">
             Saber mais sobre o ISA
           </Link>
         </section>

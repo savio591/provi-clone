@@ -112,12 +112,12 @@ export function Footer() {
       <div className="separator"></div>
       <div className="rights">
         <div className="left">
-          <a href="./" className="textLink12">
+          <Link to="./" className="textLink12">
             Termos de uso
-          </a>
-          <a href="./" className="textLink12">
+          </Link>
+          <Link to="./" className="textLink12">
             Politica de privacidade
-          </a>
+          </Link>
         </div>
         <div className="right text12">
           Copyrights ® 2021 Provi. All rights reserved.

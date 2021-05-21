@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { Container, Button, Card } from "./styles";
+import { Container, Button } from "./styles";
 
 import arrowRightImg from "../../assets/arrowRight.svg";
 
@@ -19,28 +19,10 @@ import ld5i2Img from "../../assets/ld5i2.svg";
 import ld5i3Img from "../../assets/ld5i3.svg";
 import ld5i4Img from "../../assets/ld5i4.svg";
 
-import linkedin_circularImg from "../../assets/linkedin_circular.png";
-import arrow_left_circularImg from "../../assets/arrow_left_circular.svg";
-
 import phoneGif from "../../assets/phone.gif";
 
-import { KeenSlider } from "../KeenSlider";
-import { useKeenSlider } from "keen-slider/react";
-
 export function LandingContainer() {
-  
-  // const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
-  //   loop: false,
-  //   duration: 1000,
-  // });
 
-  // function handleNextSlide() {
-  //   slider.next();
-  // }
-
-  // function handlePrevSlide() {
-  //   slider.prev();
-  // }
 
   return (
     <Container>
@@ -98,21 +80,21 @@ export function LandingContainer() {
         <div className="rows">
           <ul>
             <li>
-              <img src={ld4i1Img} alt="" />
+              <img src={ld4i1Img} alt="Vidas transformadas" />
               <p className="text20">
                 Mais de <span>70.000 estudantes</span> já transformaram suas
                 carreiras com o financiamento Provi.
               </p>
             </li>
             <li>
-              <img src={ld4i2Img} alt="" />
+              <img src={ld4i2Img} alt="Escolas parceiras" />
               <p className="text20">
                 Mais de <span>1.000 escolas parceiras</span> usam nossa
                 plataforma como meio de pagamento.
               </p>
             </li>
             <li>
-              <img src={ld4i3Img} alt="" />
+              <img src={ld4i3Img} alt="Crédito" />
               <p className="text20">
                 Mais de <span>220 milhões de reais</span> em crédito voltados
                 para a educação.
@@ -163,73 +145,6 @@ export function LandingContainer() {
             As pessoas que transformaram suas carreiras com ajuda da Provi.
           </h2>
         </section>
-
-        {/* <KeenSlider
-          sliderRef={sliderRef}
-          content={[
-            <Card>
-              <section>
-                <h1 className="text30 blue center">
-                  <span>Clayton Margiotti</span>
-                </h1>
-                <h2 className="text24 center magenta">
-                  <span>Founder and CEO @Eleva Leader</span>
-                </h2>
-              </section>
-
-              <nav className="cardNavigator">
-                <button className="clean" onClick={handlePrevSlide}>
-                  <img src={arrow_left_circularImg} alt="card anterior" />
-                </button>
-                <Link to="./">
-                  <img src={linkedin_circularImg} alt="LinkedIn" />
-                </Link>
-                <button className="clean" onClick={handleNextSlide}>
-                  <img
-                    src={arrow_left_circularImg}
-                    alt="próximo card"
-                    className="rotate180"
-                  />
-                </button>
-              </nav>
-              <p className="text24 blue">
-                A Provi definitivamente foi um elo que proporcionou uma
-                experiência fantástica. Um financiamento prático e rápido.
-              </p>
-            </Card>,
-            <Card>
-              <section>
-                <h1 className="text30 blue center">
-                  <span>Giovanni de Paulo da Cunha</span>
-                </h1>
-                <h2 className="text24 center magenta">
-                  <span>Full Stack Developer @ Aoop Cloud Solutions</span>
-                </h2>
-              </section>
-
-              <nav className="cardNavigator">
-                <button className="clean" onClick={handlePrevSlide}>
-                  <img src={arrow_left_circularImg} alt="card anterior" />
-                </button>
-                <Link to="./">
-                  <img src={linkedin_circularImg} alt="LinkedIn" />
-                </Link>
-                <button className="clean" onClick={handleNextSlide}>
-                  <img
-                    src={arrow_left_circularImg}
-                    alt="próximo card"
-                    className="rotate180"
-                  />
-                </button>
-              </nav>
-              <p className="text24 blue">
-                Fazer o curso da Ironhack foi uma das melhores escolhas que já
-                fiz, que me proporcionou um conhecimento incrível. Sem a Provi,
-                eu não teria tido a chance de fazer o curso.
-              </p>
-            </Card>,
-          ]}
-        /> */}
       </div>
       <div className="landing7">
         <section>

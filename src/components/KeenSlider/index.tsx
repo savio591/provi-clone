@@ -1,39 +1,20 @@
-import { ReactNode, useEffect, useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
+import { ReactNode, RefObject } from "react";
 
 interface KeenSliderProps {
   content: ReactNode[];
+  sliderRef: RefObject<HTMLDivElement>;
 }
 
-export function KeenSlider({ content }: KeenSliderProps) {
-  // const [pause, setPause] = useState(false);
-
-  const [sliderRef, slider] = useKeenSlider({
-    loop: true,
-    duration: 1000,
-    // dragStart: () => {
-    //   setPause(true);
-    // },
-    // dragEnd: () => {
-    //   setPause(false);
-    // },
-  });
-
-  // useEffect(() => {
-  //   sliderRef.current.addEventListener("mouseover", () => {
-  //     setPause(true);
-  //   });
-  //   sliderRef.current.addEventListener("mouseout", () => {
-  //     setPause(false);
-  //   });
-  // }, [sliderRef]);
-  {
-    /*ref={sliderRef}*/
-  }
+export function KeenSlider({ content, sliderRef }: KeenSliderProps) {
   return (
-    <div className="keen-slider cards">
-      {content.map((item) => {
-        return <div className="keen-slider__slide">{item}</div>;
+    <div ref={sliderRef} className="keen-slider cards">
+      {content.map((item, id) => {
+        return (
+          <div key={id} className="keen-slider__slide">
+            {item}
+          </div>
+        );
       })}
     </div>
   );

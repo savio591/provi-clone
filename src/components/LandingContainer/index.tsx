@@ -24,8 +24,22 @@ import arrow_left_circularImg from "../../assets/arrow_left_circular.svg";
 
 import phoneGif from "../../assets/phone.gif";
 import { KeenSlider } from "../KeenSlider";
+import { useKeenSlider } from "keen-slider/react";
 
 export function LandingContainer() {
+  const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
+    loop: false,
+    duration: 1000,
+  });
+
+  function handleNextSlide() {
+    slider.next();
+  }
+
+  function handlePrevSlide() {
+    slider.prev();
+  }
+
   return (
     <Container>
       <div className="landing1">
@@ -149,6 +163,7 @@ export function LandingContainer() {
         </section>
 
         <KeenSlider
+          sliderRef={sliderRef}
           content={[
             <Card>
               <section>
@@ -161,13 +176,13 @@ export function LandingContainer() {
               </section>
 
               <nav className="cardNavigator">
-                <button className="clean">
+                <button className="clean" onClick={handlePrevSlide}>
                   <img src={arrow_left_circularImg} alt="card anterior" />
                 </button>
                 <Link to="./">
                   <img src={linkedin_circularImg} alt="LinkedIn" />
                 </Link>
-                <button className="clean">
+                <button className="clean" onClick={handleNextSlide}>
                   <img
                     src={arrow_left_circularImg}
                     alt="próximo card"
@@ -191,13 +206,13 @@ export function LandingContainer() {
               </section>
 
               <nav className="cardNavigator">
-                <button className="clean">
+                <button className="clean" onClick={handlePrevSlide}>
                   <img src={arrow_left_circularImg} alt="card anterior" />
                 </button>
                 <Link to="./">
                   <img src={linkedin_circularImg} alt="LinkedIn" />
                 </Link>
-                <button className="clean">
+                <button className="clean" onClick={handleNextSlide}>
                   <img
                     src={arrow_left_circularImg}
                     alt="próximo card"

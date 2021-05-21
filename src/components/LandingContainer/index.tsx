@@ -20,6 +20,7 @@ import ld5i3Img from "../../assets/ld5i3.svg";
 import ld5i4Img from "../../assets/ld5i4.svg";
 
 import phoneGif from "../../assets/phone.gif";
+import { PinCardsSlider } from "../PinCardsSlider";
 
 export function LandingContainer() {
 
@@ -145,6 +146,7 @@ export function LandingContainer() {
             As pessoas que transformaram suas carreiras com ajuda da Provi.
           </h2>
         </section>
+        <PinCardsSlider />
       </div>
       <div className="landing7">
         <section>

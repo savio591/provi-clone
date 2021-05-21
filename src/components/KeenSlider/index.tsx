@@ -8,13 +8,14 @@ interface KeenSliderProps {
 export function KeenSlider({ content, sliderRef }: KeenSliderProps) {
   return (
     <div ref={sliderRef} className="keen-slider cards">
-      {content.map((item, id) => {
+      <p>Test</p>
+      {/* {content.map((item, id) => {
         return (
           <div key={id} className="keen-slider__slide">
             {item}
           </div>
         );
-      })}
+      })} */}
     </div>
   );
 }

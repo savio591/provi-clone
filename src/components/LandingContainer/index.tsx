@@ -29,18 +29,18 @@ import { useKeenSlider } from "keen-slider/react";
 
 export function LandingContainer() {
   
-  const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
-    loop: false,
-    duration: 1000,
-  });
+  // const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
+  //   loop: false,
+  //   duration: 1000,
+  // });
 
-  function handleNextSlide() {
-    slider.next();
-  }
+  // function handleNextSlide() {
+  //   slider.next();
+  // }
 
-  function handlePrevSlide() {
-    slider.prev();
-  }
+  // function handlePrevSlide() {
+  //   slider.prev();
+  // }
 
   return (
     <Container>
@@ -164,7 +164,7 @@ export function LandingContainer() {
           </h2>
         </section>
 
-        <KeenSlider
+        {/* <KeenSlider
           sliderRef={sliderRef}
           content={[
             <Card>
@@ -229,7 +229,7 @@ export function LandingContainer() {
               </p>
             </Card>,
           ]}
-        />
+        /> */}
       </div>
       <div className="landing7">
         <section>

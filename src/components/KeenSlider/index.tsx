@@ -6,35 +6,35 @@ interface KeenSliderProps {
 }
 
 export function KeenSlider({ content }: KeenSliderProps) {
-  const [pause, setPause] = useState(false);
+  // const [pause, setPause] = useState(false);
 
   const [sliderRef, slider] = useKeenSlider({
     loop: true,
     duration: 1000,
-    dragStart: () => {
-      setPause(true);
-    },
-    dragEnd: () => {
-      setPause(false);
-    },
+    // dragStart: () => {
+    //   setPause(true);
+    // },
+    // dragEnd: () => {
+    //   setPause(false);
+    // },
   });
 
-  useEffect(() => {
-    sliderRef.current.addEventListener("mouseover", () => {
-      setPause(true);
-    });
-    sliderRef.current.addEventListener("mouseout", () => {
-      setPause(false);
-    });
-  }, [sliderRef]);
-
+  // useEffect(() => {
+  //   sliderRef.current.addEventListener("mouseover", () => {
+  //     setPause(true);
+  //   });
+  //   sliderRef.current.addEventListener("mouseout", () => {
+  //     setPause(false);
+  //   });
+  // }, [sliderRef]);
+  {
+    /*ref={sliderRef}*/
+  }
   return (
-    <>
-      <div ref={sliderRef} className="keen-slider cards">
-        {content.map((item) => {
-          return <div className="keen-slider__slide">{item}</div>;
-        })}
-      </div>
-    </>
+    <div className="keen-slider cards">
+      {content.map((item) => {
+        return <div className="keen-slider__slide">{item}</div>;
+      })}
+    </div>
   );
 }

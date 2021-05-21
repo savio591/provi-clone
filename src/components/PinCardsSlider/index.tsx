@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 import { useKeenSlider } from "keen-slider/react";
 import { KeenSlider } from "../KeenSlider";
+
 import { Card } from "./styles";
 
 import arrow_left_circularImg from "../../assets/arrow_left_circular.svg";
 import linkedin_circularImg from "../../assets/linkedin_circular.png";
-import { Link } from "react-router-dom";
 
 export function PinCardsSlider() {
   const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({

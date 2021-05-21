@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import { PinCardsSlider } from "../PinCardsSlider";
+
 import { Container, Button } from "./styles";
 
 import arrowRightImg from "../../assets/arrowRight.svg";
@@ -9,22 +11,16 @@ import nt2Img from "../../assets/nt2.png";
 import nt3Img from "../../assets/nt3.png";
 import nt4Img from "../../assets/nt4.png";
 import nt5Img from "../../assets/nt5.png";
-
 import ld4i1Img from "../../assets/ld4i1.png";
 import ld4i2Img from "../../assets/ld4i2.png";
 import ld4i3Img from "../../assets/ld4i3.png";
-
 import ld5i1Img from "../../assets/ld5i1.svg";
 import ld5i2Img from "../../assets/ld5i2.svg";
 import ld5i3Img from "../../assets/ld5i3.svg";
 import ld5i4Img from "../../assets/ld5i4.svg";
-
 import phoneGif from "../../assets/phone.gif";
-import { PinCardsSlider } from "../PinCardsSlider";
 
 export function LandingContainer() {
-
-
   return (
     <Container>
       <div className="landing1">

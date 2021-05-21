@@ -56,7 +56,7 @@ export const Container = styled.div`
     justify-content: center;
     gap: 1.5rem;
 
-    padding: 20px 36px;
+    padding: 1.25rem 2.25rem;
 
     & img {
       height: 48rem;
@@ -102,20 +102,20 @@ export const Container = styled.div`
         flex-direction: row;
         justify-content: center;
         align-items: baseline;
-        padding: 20px 50px 50px;
+        padding: 1.25rem 3.125rem 3.125rem;
 
         flex: none;
         order: 1;
         align-self: stretch;
         flex-grow: 0;
-        gap: 50px 50px;
+        gap: 3.125rem 3.125rem;
 
         & li {
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
           align-items: center;
-          gap: 100px;
+          gap: 6.25rem;
           flex-grow: 1;
 
           & p {

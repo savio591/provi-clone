@@ -23,6 +23,7 @@ Details of the time spent on this project
 * Header: 9 cycles
 * Landing Container: 20 cycles
 * Footer: 3 cycles
+* Keen-slider: 4 cycles;
 
 [Figma]: https://www.figma.com/file/wUBzhofzIoWjlNo0ZdNbZ1/Provi-Challenge?node-id=0%3A1
 [Dev]: https://github.com/savio591/provi-clone/tree/dev

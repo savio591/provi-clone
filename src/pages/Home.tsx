@@ -7,23 +7,23 @@ import { LandingContainer } from "../components/LandingContainer";
 import { Footer } from "../components/Footer";
 
 export function Home() {
-  const [isMenuModalActive, setIsMenuModalActive] = useState(false);
+  // const [isMenuModalActive, setIsMenuModalActive] = useState(false);
 
-  function handleOpenMenuModal() {
-    setIsMenuModalActive(true);
-  }
+  // function handleOpenMenuModal() {
+  //   setIsMenuModalActive(true);
+  // }
 
-  function handleCloseMenuModal() {
-    setIsMenuModalActive(false);
-  }
+  // function handleCloseMenuModal() {
+  //   setIsMenuModalActive(false);
+  // }
 
   return (
     <>
-      <Header onHandleBurguerButton={handleOpenMenuModal} />
-      <MobileMenuModal
+      <Header />
+      {/* <MobileMenuModal
         isOpen={isMenuModalActive}
         onRequestClose={handleCloseMenuModal}
-      />
+      /> */}
       <LandingContainer />
       <Footer />
       <GlobalStyle />

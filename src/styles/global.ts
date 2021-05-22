@@ -23,7 +23,12 @@ html {
     @media (max-width: 1138px) {
         font-size: 87.5%
     }
+
+    @media (max-width: 379px) {
+        font-size: 75%
+    }
 }
+
 
 
 body {
@@ -74,6 +79,11 @@ h1.text60 {
   line-height: 4.625rem;
 
   color: #FFFFFF;
+
+  @media (max-width: 640px) {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
 }
 
 h1.text48 {
@@ -83,6 +93,19 @@ h1.text48 {
   line-height: 3.75rem;
 
   color: #FFFFFF;
+  max-width: 100%;
+
+  @media (max-width: 910px) {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  
 }
 
 h1.text38, h2.text38 {
@@ -90,6 +113,11 @@ h1.text38, h2.text38 {
   line-height: 3rem;
 
   color: #FFFFFF;
+
+  @media (max-width: 640px) {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
 }
 
 h1.text30 {
@@ -118,26 +146,26 @@ span {
     font-weight: bold;
   }
 
-p.text20 {
-font-size: 1.25rem;
-line-height: 1.5rem;
-text-align: center;
+  p.text20 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-align: center;
 
-color: #FFFFFF;
+  color: #FFFFFF;
 
-}
+  }
 
-a.textLink16 {
-font-style: normal;
-font-weight: bold;
-font-size: 1rem;
-line-height: 1.25rem;
-display: flex;
-align-items: center;
-text-decoration-line: none;
+  a.textLink16 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  display: flex;
+  align-items: center;
+  text-decoration-line: none;
 
-color: #FFFFFF;
-}
+  color: #FFFFFF;
+  }
 
 a.textLink12 {
 font-size: 0.75rem;
@@ -235,6 +263,7 @@ div.separator {
   -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
+  width: 100%;
 
   &__slide {
     position: relative;

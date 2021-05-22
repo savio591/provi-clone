@@ -37,6 +37,9 @@ The plannings and moods logs are available in [PLAN.md](./PLAN.md)
 ## Stats: 
 The plannings and moods logs are available in [STATS.md](./STATS.md)
 
+## Faq's:
+* Why it ins't used CRA or other boilerplates? **Hardware Limitations.**
+
 ## Instructions provided by Provi:
 
 ### Description

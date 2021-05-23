@@ -14,7 +14,9 @@ import ld5i2Img from "../../assets/ld5i2.svg";
 import ld5i3Img from "../../assets/ld5i3.svg";
 import ld5i4Img from "../../assets/ld5i4.svg";
 import phoneGif from "../../assets/phone.gif";
+
 import { CarouselSlider } from "../CarouselSlider";
+import { useProviApi } from "../../hooks/useProviApi";
 
 export function LandingContainer() {
   return (
@@ -50,6 +52,7 @@ export function LandingContainer() {
         </div>
       </div>
       <div className="landing4">
+        
         <h1 className="text38">
           Histórico de crédito <span>não pode ser</span> uma{" "}
           <span>barreira pra quem quer estudar.</span>

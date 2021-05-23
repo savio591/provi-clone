@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+import { useNav } from "../../hooks/useProviApi";
+
 import { Button, Container, List, Nav } from "./styles";
 
 import logoWideBlueImg from "../../assets/logo_wide_blue.svg";
@@ -12,6 +14,7 @@ import burguerIconBlueImg from "../../assets/burguer_blue.svg";
 export function Header() {
   const [isPageScrolled, setIsPageScrolled] = useState(false);
   const [isToogledBurguerButton, setIsToogledBurguerButton] = useState(false);
+  const navData = useNav();
 
   function handleBurguerButton() {
     setIsToogledBurguerButton(!isToogledBurguerButton);
@@ -41,26 +44,24 @@ export function Header() {
       </button>
       <Nav isActive={isToogledBurguerButton}>
         <List className={isPageScrolled ? "scrolled" : " "}>
-          <li>
-            <Link to="./">Como funciona</Link>
-          </li>
-          <li>
-            <Link to="./">Quem somos</Link>
-          </li>
-          <li>
-            <Link to="./">Parceiros</Link>
-          </li>
-          <li>
-            <Link to="./">Dúvidas</Link>
-          </li>
-          <li>
-            <Link to="./">Blog</Link>
-          </li>
-          <li>
-            <Link to="./" className="login">
-              Login
-            </Link>
-          </li>
+          {navData.map((item) => {
+            if (item.type === "textLink") {
+              return (
+                <li key={item.title}>
+                  <Link to={item.link}>{item.title}</Link>
+                </li>
+              );
+            }
+            if (item.type === "login") {
+              return (
+                <li key={item.title}>
+                  <Link to={item.link} className="login">
+                    {item.title}
+                  </Link>
+                </li>
+              );
+            }
+          })}
           <li>
             <Link to="./">
               <Button icon={arrowRightImg}>

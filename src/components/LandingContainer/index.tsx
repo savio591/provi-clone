@@ -6,11 +6,6 @@ import { Container, Button } from "./styles";
 
 import arrowRightImg from "../../assets/arrowRight.svg";
 
-import nt1Img from "../../assets/nt1.png";
-import nt2Img from "../../assets/nt2.png";
-import nt3Img from "../../assets/nt3.png";
-import nt4Img from "../../assets/nt4.png";
-import nt5Img from "../../assets/nt5.png";
 import ld4i1Img from "../../assets/ld4i1.png";
 import ld4i2Img from "../../assets/ld4i2.png";
 import ld4i3Img from "../../assets/ld4i3.png";
@@ -19,6 +14,9 @@ import ld5i2Img from "../../assets/ld5i2.svg";
 import ld5i3Img from "../../assets/ld5i3.svg";
 import ld5i4Img from "../../assets/ld5i4.svg";
 import phoneGif from "../../assets/phone.gif";
+
+import { CarouselSlider } from "../CarouselSlider";
+import { useProviApi } from "../../hooks/useProviApi";
 
 export function LandingContainer() {
   return (
@@ -33,23 +31,7 @@ export function LandingContainer() {
         </Link>
       </div>
       <div className="landing2">
-        <ul>
-          <li>
-            <img src={nt1Img} alt="Negócios" />
-          </li>
-          <li>
-            <img src={nt2Img} alt="Valor" />
-          </li>
-          <li>
-            <img src={nt3Img} alt="Forbes" />
-          </li>
-          <li>
-            <img src={nt4Img} alt="EXAME" />
-          </li>
-          <li>
-            <img src={nt5Img} alt="StartSe" />
-          </li>
-        </ul>
+        <CarouselSlider />
       </div>
       <div className="landing3">
         <img src={phoneGif} alt="Signup preview" />
@@ -70,6 +52,7 @@ export function LandingContainer() {
         </div>
       </div>
       <div className="landing4">
+        
         <h1 className="text38">
           Histórico de crédito <span>não pode ser</span> uma{" "}
           <span>barreira pra quem quer estudar.</span>

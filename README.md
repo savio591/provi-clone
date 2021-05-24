@@ -16,7 +16,7 @@ I want to use my habilities with Pure CSS, Javascript/Typescript, and ReactJS
 
 ## Starting the development
 
-* A deploy build is available on my [site](https://savilexperiments.com.br/dualbank).
+* A deploy build is available on my [site](https://savilexperiments.com.br/provi-clone).
 
 * To serve on local machine, install dependencies with ``yarn`` or ``npm`` and start with ``yarn dev`` or `npm run dev`. Webpack will serve the webpage on port ``9000``
 
@@ -36,6 +36,9 @@ The plannings and moods logs are available in [PLAN.md](./PLAN.md)
 
 ## Stats: 
 The plannings and moods logs are available in [STATS.md](./STATS.md)
+
+## Faq's:
+* Why it ins't used CRA or other boilerplates? **Hardware Limitations.**
 
 ## Instructions provided by Provi:
 

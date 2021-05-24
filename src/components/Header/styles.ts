@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import burguerIconImg from "../../assets/burguer.svg";
 
 export const Container = styled.header`
-  width: 100%;
+  z-index: 1;
+  width: 100vw;
   height: 5.625rem;
   display: flex;
   background: transparent;
@@ -10,6 +10,19 @@ export const Container = styled.header`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  transition: background 0.3s;
+
+  button.burguer {
+    display: none;
+
+    @media (max-width: 1115px) {
+      display: initial;
+
+      &.scrolled {
+      }
+    }
+  }
 
   &.scrolled {
     background: white;
@@ -23,32 +36,22 @@ export const Container = styled.header`
   }
 `;
 
-export const BurguerStyle = styled.button`
-  border: none;
-  background: transparent;
-  display: none;
-
-  @media (max-width: 1115px) {
-    display: initial;
-  }
-`;
-
 interface NavProps {
   isActive?: boolean;
 }
 
 export const Nav = styled.nav<NavProps>`
-  &.modal {
-    display: ${(props) => (props.isActive ? "inherit" : "none")};
-  }
-
   @media (max-width: 1115px) {
     position: absolute;
-    display: flex;
-    background: red;
-    height: 100%;
+    display: ${(props) => (props.isActive ? "flex" : "none")};
+    background: transparent;
     flex-direction: column;
     align-items: flex-start;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -1;
   }
 `;
 
@@ -73,6 +76,10 @@ export const List = styled.ul`
     color: #cdcdcd;
   }
 
+  @media (max-width: 1115px) {
+    min-height: 640px;
+  }
+
   a {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -84,6 +91,11 @@ export const List = styled.ul`
 
     &:hover {
       opacity: 0.7;
+    }
+
+    @media (max-width: 1115px) {
+      font-size: 1.5rem;
+      line-height: 1.75rem;
     }
   }
 
@@ -100,7 +112,9 @@ export const List = styled.ul`
     background: var(--blue);
     width: 100%;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 2.5rem;
   }
 `;
 
@@ -147,5 +161,9 @@ export const Button = styled.button<ButtonProps>`
   &:after {
     content: url("${(props) => props.icon}");
     line-height: 0;
+  }
+
+  @media (max-width: 1115px) {
+    display: none;
   }
 `;

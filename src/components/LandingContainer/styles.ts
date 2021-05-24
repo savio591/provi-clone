@@ -24,6 +24,16 @@ export const Container = styled.div`
 
     & h1 {
       max-width: 33.5rem;
+
+      @media (max-width: 640px) {
+        max-width: 18rem;
+      }
+    }
+
+    a.textLink16 {
+      @media (max-width: 640px) {
+        display: none;
+      }
     }
   }
 
@@ -34,18 +44,7 @@ export const Container = styled.div`
     width: 100%;
     height: 6.8125rem;
 
-    padding: 0 2.75rem;
-
     background: var(--grey_bar);
-
-    & ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-grow: 1;
-      align-items: center;
-      list-style: none;
-    }
   }
 
   div.landing3 {
@@ -59,8 +58,8 @@ export const Container = styled.div`
     padding: 1.25rem 2.25rem;
 
     & img {
-      height: 48rem;
-      margin-left: 2rem;
+      max-height: 48rem;
+      max-width: 100%;
     }
 
     & div.container {
@@ -79,6 +78,14 @@ export const Container = styled.div`
         gap: 3rem;
       }
     }
+
+    @media (max-width: 640px) {
+      flex-direction: column-reverse;
+
+      button {
+        display: none;
+      }
+    }
   }
 
   div.landing4 {
@@ -87,6 +94,7 @@ export const Container = styled.div`
     align-items: center;
     padding: 4rem 2rem 4rem;
     gap: 2rem;
+    width: 100%;
 
     background: var(--blue);
 
@@ -96,19 +104,28 @@ export const Container = styled.div`
     }
 
     & div.rows {
+      width: 100%;
+      flex-wrap: 1;
+
       & ul {
-        list-style: none;
         display: flex;
         flex-direction: row;
+        list-style: none;
         justify-content: center;
         align-items: baseline;
         padding: 1.25rem 3.125rem 3.125rem;
 
-        flex: none;
-        order: 1;
-        align-self: stretch;
-        flex-grow: 0;
         gap: 3.125rem 3.125rem;
+        width: 100%;
+
+        @media (max-width: 1024px) {
+          flex-direction: column;
+          align-items: center;
+
+          img {
+            width: 100%;
+          }
+        }
 
         & li {
           display: flex;
@@ -121,6 +138,10 @@ export const Container = styled.div`
           & p {
             max-width: 20rem;
             text-align: center;
+
+            @media (max-width: 640px) {
+              max-width: 100%;
+            }
           }
         }
       }
@@ -148,16 +169,27 @@ export const Container = styled.div`
       align-items: center;
       padding: 4rem 2rem;
       align-items: baseline;
+      gap: 8rem 0;
+
+      @media (max-width: 640px) {
+        display: flex;
+        flex-direction: column;
+
+        button {
+          display: none;
+        }
+      }
 
       & li {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 4rem;
-
+        width: 100%;
         flex-grow: 1;
+
         & img {
-          width: 12rem;
+          max-width: 12rem;
         }
 
         & p {
@@ -186,6 +218,10 @@ export const Container = styled.div`
     width: 100%;
     min-height: 100vh;
 
+    @media (max-width: 640px) {
+      background: #ffffff;
+    }
+
     section {
       display: flex;
       flex-direction: column;
@@ -201,8 +237,6 @@ export const Container = styled.div`
       }
     }
   }
-
-  
 `;
 
 interface ButtonProps {
@@ -275,4 +309,3 @@ export const Button = styled.button<ButtonProps>`
     line-height: 0;
   }
 `;
-

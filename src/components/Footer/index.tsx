@@ -3,11 +3,11 @@ import { Container } from "./styles";
 
 import logo_wide_whiteImg from "../../assets/logo_wide_white.svg";
 
-import { useSitemapNav, useSocialNav } from "../../hooks/useProviApi";
+import { useSitemap, useSocialNav } from "../../hooks/useProviApi";
 
 export function Footer() {
   const socialLinksData = useSocialNav();
-  const sitemapData = useSitemapNav();
+  const sitemapData = useSitemap();
   return (
     <Container>
       <div className="navSection">

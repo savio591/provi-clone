@@ -15,6 +15,7 @@ export function Header() {
   const [isPageScrolled, setIsPageScrolled] = useState(false);
   const [isToogledBurguerButton, setIsToogledBurguerButton] = useState(false);
   const navData = useNav();
+  console.log(navData)
 
   function handleBurguerButton() {
     setIsToogledBurguerButton(!isToogledBurguerButton);

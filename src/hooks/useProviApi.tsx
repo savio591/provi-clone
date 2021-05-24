@@ -26,14 +26,21 @@ interface SitemapData {
   }[];
 }
 
+interface CarouselData {
+  title: string;
+  img: string;
+  link: string;
+}
+
 interface ProviApiContextProps {
   children: ReactNode;
 }
 
-interface ProviApiContextData {
+export interface ProviApiContextData {
   socialNavData: SocialNavData[];
   sitemapData: SitemapData[];
   navData: NavData[];
+  carouselData: CarouselData[]
 }
 
 export const ProviApiContext = createContext<ProviApiContextData>(
@@ -47,6 +54,9 @@ export function ProviApiProvider({ children }: ProviApiContextProps) {
   );
   const [socialNavData, setSocialNavData] = useState<SocialNavData[]>(
     [] as SocialNavData[]
+  );
+  const [carouselData, setCarouselData] = useState<CarouselData[]>(
+    [] as CarouselData[]
   );
 
   useEffect(() => {
@@ -67,8 +77,14 @@ export function ProviApiProvider({ children }: ProviApiContextProps) {
       .then((data) => setNavData(data.navLinks));
   }, []);
 
+  useEffect(() => {
+    fetch("api/carouselData")
+      .then((response) => response.json())
+      .then((data) => setCarouselData(data.carouselLinks));
+  }, []);
+
   return (
-    <ProviApiContext.Provider value={{ socialNavData, sitemapData, navData }}>
+    <ProviApiContext.Provider value={{ socialNavData, sitemapData, navData, carouselData }}>
       {children}
     </ProviApiContext.Provider>
   );
@@ -86,7 +102,7 @@ export function useSocialNav() {
   return socialNavData;
 }
 
-export function useSitemapNav() {
+export function useSitemap() {
   const { sitemapData } = useContext(ProviApiContext);
 
   return sitemapData;
@@ -96,4 +112,10 @@ export function useNav() {
   const { navData } = useContext(ProviApiContext);
 
   return navData;
+}
+
+export function useCarousel() {
+  const { carouselData } = useContext(ProviApiContext);
+
+  return carouselData;
 }

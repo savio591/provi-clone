@@ -6,11 +6,12 @@ interface KeenSliderProps {
 }
 
 export function KeenSlider({ content, sliderRef }: KeenSliderProps) {
-  const sliderContents = content ? content : [];
-  
+
+
+
   return (
     <div ref={sliderRef} className="keen-slider cards">
-      {sliderContents.map((item, id) => {
+      {content.map((item, id) => {
         return (
           <div key={id} className="keen-slider__slide">
             {item}

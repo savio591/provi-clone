@@ -5,16 +5,50 @@ import instagram_circular_whiteImg from "./assets/instagram_circular_white.svg";
 import linkedin_circular_whiteImg from "./assets/linkedin_circular_white.svg";
 import blog_circular_whiteImg from "./assets/blog_circular_white.svg";
 
+import nt1Img from "./assets/nt1.png";
+import nt2Img from "./assets/nt2.png";
+import nt3Img from "./assets/nt3.png";
+import nt4Img from "./assets/nt4.png";
+import nt5Img from "./assets/nt5.png";
+
 export function Server() {
   createServer({
     models: {
       socialLinks: Model,
       sitemapLinks: Model,
-      navLinks: Model
+      navLinks: Model,
+      carouselLinks: Model,
     },
 
     seeds(server) {
       server.db.loadData({
+        carouselLinks: [
+          {
+            title: "Negócios",
+            link: "./",
+            img: nt1Img,
+          },
+          {
+            title: "Valor",
+            link: "./",
+            img: nt2Img,
+          },
+          {
+            title: "Forbes",
+            link: "./",
+            img: nt3Img,
+          },
+          {
+            title: "EXAME",
+            link: "./",
+            img: nt4Img,
+          },
+          {
+            title: "StartSE",
+            link: "./",
+            img: nt5Img,
+          },
+        ],
         navLinks: [
           {
             title: "Como funciona",
@@ -134,51 +168,9 @@ export function Server() {
       this.get("navData", () => {
         return this.schema.all("navLinks");
       });
+      this.get("carouselData", () => {
+        return this.schema.all("carouselLinks");
+      });
     },
   });
 }
-
-// sitemapData: [
-//   {
-//     type: "nav",
-//     data: [
-//       {
-//         title: "Como funciona",
-//         link: "./",
-//         type: "textLink",
-//       },
-//       {
-//         title: "Quem somos",
-//         link: "./",
-//         type: "textLink",
-//       },
-//       {
-//         title: "Parceiros",
-//         link: "./",
-//         type: "textLink",
-//       },
-//       {
-//         title: "Dúvidas",
-//         link: "./",
-//         type: "textLink",
-//       },
-//       {
-//         title: "Blog",
-//         link: "./",
-//         type: "textLink",
-//       },
-//       {
-//         title: "Login",
-//         link: "./",
-//         type: "login",
-//       },
-//     ],
-//   },
-//   {
-//     type: "sitemap",
-//     data: [
-//
-//     ],
-//   },
-// ],
-// }

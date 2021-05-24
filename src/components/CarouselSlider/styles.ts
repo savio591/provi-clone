@@ -7,11 +7,8 @@ export const Container = styled.div`
   width: 100%;
 
   div.cards {
-    width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
 
     & div.item {
       display: flex;

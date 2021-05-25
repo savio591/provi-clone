@@ -37,11 +37,14 @@ I want to use my abilities with Pure CSS, Javascript/Typescript, and ReactJS
 * Babel
 * Styled Components(CSS/SASS on JS)
 
-## Planning
-Details of the plannings and moods logs are available in [PLAN.md](./PLAN.md)
+## Planning:
+Detailed plannings and moods logs are available in [PLAN.md](./PLAN.md)
 
 ## Stats: 
 Stats are available in [STATS.md](./STATS.md)
+
+## Prototype:
+The prototype created on Figma is [here](https://www.figma.com/file/wUBzhofzIoWjlNo0ZdNbZ1/Provi-Challenge?node-id=0%3A1)
 
 ## Faqs:
 * Why isn't used CRA or other boilerplates? **Hardware Limitations.**
@@ -87,4 +90,4 @@ and you will receive and answer back from our side in 3 business days 🏃🏃
 
 [luciano@provi.com.br]: mailto:luciano@provi.com.br
 [gian@provi.com.br]: mailto:gian@provi.com.br
-[dev@provi.com.br]: mailto:dev@provi.com.br
+[dev@provi.com.br]: mai

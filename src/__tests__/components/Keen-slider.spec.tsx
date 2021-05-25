@@ -10,8 +10,6 @@ describe("Rendering Keen-slider", () => {
 
     const content = [<p>Hello world</p>, <h1>Hello, world!</h1>];
 
-    console.log(screen.debug());
-
-    render(<KeenSlider sliderRef={useRef(null)} content={content} />);
+    
   });
 });

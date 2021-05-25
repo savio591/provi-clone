@@ -22,6 +22,9 @@ I want to use my habilities with Pure CSS, Javascript/Typescript, and ReactJS
 
 * To build, run `build` with yarn or npm, so, it will creates and pack up build on `/dist` folder ready to deploy.
 
+### Requirements:
+* **Node:** v12+
+
 ## Stacks🚀
 
 * Node/Yarn

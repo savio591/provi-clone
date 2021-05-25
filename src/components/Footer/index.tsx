@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import { Container } from "./styles";
-
-import logo_wide_whiteImg from "../../assets/logo_wide_white.svg";
 
 import { useSitemap, useSocialNav } from "../../hooks/useProviApi";
+
+import { Container } from "./styles";
+import logo_wide_whiteImg from "../../assets/logo_wide_white.svg";
+
 
 export function Footer() {
   const socialLinksData = useSocialNav();

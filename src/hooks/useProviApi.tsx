@@ -60,25 +60,25 @@ export function ProviApiProvider({ children }: ProviApiContextProps) {
   );
 
   useEffect(() => {
-    fetch("api/socialData")
+    fetch("./api/socialData")
       .then((response) => response.json())
       .then((data) => setSocialNavData(data.socialLinks));
   }, []);
 
   useEffect(() => {
-    fetch("api/sitemapData")
+    fetch("./api/sitemapData")
       .then((response) => response.json())
       .then((data) => setSitemapData(data.sitemapLinks));
   }, []);
 
   useEffect(() => {
-    fetch("api/navData")
+    fetch("./api/navData")
       .then((response) => response.json())
       .then((data) => setNavData(data.navLinks));
   }, []);
 
   useEffect(() => {
-    fetch("api/carouselData")
+    fetch("./api/carouselData")
       .then((response) => response.json())
       .then((data) => setCarouselData(data.carouselLinks));
   }, []);

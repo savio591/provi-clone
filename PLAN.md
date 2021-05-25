@@ -28,7 +28,7 @@ Good luck! <3
 ## Second planning:
 
 ### Recreate the [Provi]'s landing page on figma:
-- [x] Recreate the Provi landing page on a draft in [Figma]
+- [x] Recreate the Provi landing page on a draft in [Figma] <- The link to the prototype
 - [x] Comment the finished links on this [issue](https://github.com/savio591/provi-clone/issues/5)
 - [x] With the Figma project finished, you will be able to describe and understand the components, structure, and actions. So, you can create the backlogs/issues based on your Figma elements, components, and pages.
 - [x] Register your work times, use each pomodoro cycle as metrics.
@@ -36,8 +36,10 @@ Good luck! <3
 
 ## Third planning:
 
-* [ ] List the components and pages and create the backlogs on [issues] page
-* [ ] All the new plans will be described on [issues] page.
+* [x] List the components and pages and create the backlogs on [issues] page.
+
+## Fourth planning:
+* [x] All the new plans will be described on [issues] page.
 
 ### Coding:
 
@@ -45,6 +47,7 @@ Good luck! <3
   * [x] Create the routes with react-dom and replace the hello world test
   * [x] Create the home page on '/pages/home' and put it on the default path route as an exact component.
   * [x] Put a "Hello world!" on this page and test.
+  * [x] ...more in [issues] page.
 
 
 

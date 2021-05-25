@@ -17,7 +17,6 @@ export function CarouselSlider() {
   });
 
   useEffect(() => {
-    console.log({carouselRef, carousel})
     window.addEventListener("scroll", () => {
       if (innerWidth > 640) setScreenSize("desktop");
       else setScreenSize("small");

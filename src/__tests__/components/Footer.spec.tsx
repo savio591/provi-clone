@@ -1,6 +1,5 @@
 import { render, screen } from "@testing-library/react";
 import { ReactNode } from "react";
-import { Header } from "../../components/Header";
 
 import facebook_circular_whiteImg from "./assets/facebook_circular_white.svg";
 import instagram_circular_whiteImg from "./assets/instagram_circular_white.svg";

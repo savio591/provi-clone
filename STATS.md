@@ -7,9 +7,9 @@ Details of the time spent on this project
 * Pomodoro(Tomighty)
 * WakaTime/VSCode stats
 
-## Total: ~33h
-* Pomo says: 81 cycles ~33h45min
-* Wakatime: 6h/day ~32h58min
+## Total: ~44h
+* Pomo says: 103 cycles ~42h58min
+* Wakatime: 6h/day ~45 hrs
 
 ## All Plannings: 11 cycles
 * 1st: 2 cycles (16/05)
@@ -31,10 +31,13 @@ Details of the time spent on this project
 * Footer: 3 cycles
 * Keen-slider: 4 cycles;
 
-## Enhancements: 11 cycles
+## Enhancements: 33 cycles
 * Responsive Layout: 8 cycles
 * Refactorings: 1 cycle
 * State management: 2 cycle
+* Context: 10 cycles
+* Tests: 8 cycles
+* Fixes post-tests and dev: 4 cycles
 
 [Figma]: https://www.figma.com/file/wUBzhofzIoWjlNo0ZdNbZ1/Provi-Challenge?node-id=0%3A1
 [Dev]: https://github.com/savio591/provi-clone/tree/dev

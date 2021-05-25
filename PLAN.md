@@ -36,8 +36,10 @@ Good luck! <3
 
 ## Third planning:
 
-* [ ] List the components and pages and create the backlogs on [issues] page
-* [ ] All the new plans will be described on [issues] page.
+* [x] List the components and pages and create the backlogs on [issues] page.
+
+## Fourth planning:
+* [x] All the new plans will be described on [issues] page.
 
 ### Coding:
 
@@ -45,6 +47,7 @@ Good luck! <3
   * [x] Create the routes with react-dom and replace the hello world test
   * [x] Create the home page on '/pages/home' and put it on the default path route as an exact component.
   * [x] Put a "Hello world!" on this page and test.
+  * [x] ...more in [issues] page.
 
 
 

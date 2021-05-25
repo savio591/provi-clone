@@ -1,26 +1,32 @@
 # Provi Challenge
 [![Good Code Quality](https://github.com/savio591/provi-clone/actions/workflows/codeInspector.yml/badge.svg?branch=dev)](https://github.com/savio591/provi-clone/actions/workflows/codeInspector.yml)
+[![Unitary Tests](https://github.com/savio591/provi-clone/actions/workflows/jest.yml/badge.svg?branch=tests)](https://github.com/savio591/provi-clone/actions/workflows/jest.yml)
 
-My project consists in clone the landing page of [Provi].
-I want to use my habilities with Pure CSS, Javascript/Typescript, and ReactJS
+My project consists of clone the landing page of [Provi].
+I want to use my abilities with Pure CSS, Javascript/Typescript, and ReactJS
 
 ## Objectives:
 
 ### Show my habilities with:
   * Create prototypes with [Figma]
-  * Good domain of Git system and Github funcionalities
+  * Good domain of Git system and Github functionalities
   * HTML/CSS/JS knowledge
   * Domain of Typescript/ReactJS
   * Domain of ReactJS functionalities, especially with props and component systems.
-  * Automated tests with Jest
+  * Unitary tests with Jest
+
+### Requirements:
+* **Node:** v12+
 
 ## Starting the development
 
 * A deploy build is available on my [site](https://savilexperiments.com.br/provi-clone).
 
-* To serve on local machine, install dependencies with ``yarn`` or ``npm`` and start with ``yarn dev`` or `npm run dev`. Webpack will serve the webpage on port ``9000``
+* To serve on the local machine, install dependencies with ``yarn`` or ``npm`` and start with ``yarn dev`` or `npm run dev`. Webpack will serve the webpage on port ``9000``
 
-* To build, run `build` with yarn or npm, so, it will creates and pack up build on `/dist` folder ready to deploy.
+* To build, run `build` with yarn or npm. It will creates and pack up build on the `/dist` folder ready to deploy.
+
+
 
 ## Stacks🚀
 
@@ -31,14 +37,17 @@ I want to use my habilities with Pure CSS, Javascript/Typescript, and ReactJS
 * Babel
 * Styled Components(CSS/SASS on JS)
 
-## Planning
-The plannings and moods logs are available in [PLAN.md](./PLAN.md)
+## Planning:
+Detailed plannings and moods logs are available in [PLAN.md](./PLAN.md)
 
 ## Stats: 
-The plannings and moods logs are available in [STATS.md](./STATS.md)
+Stats are available in [STATS.md](./STATS.md)
 
-## Faq's:
-* Why it ins't used CRA or other boilerplates? **Hardware Limitations.**
+## Prototype:
+The prototype created on Figma is [here](https://www.figma.com/file/wUBzhofzIoWjlNo0ZdNbZ1/Provi-Challenge?node-id=0%3A1)
+
+## Faqs:
+* Why isn't used CRA or other boilerplates? **Hardware Limitations.**
 
 ## Instructions provided by Provi:
 
@@ -81,4 +90,4 @@ and you will receive and answer back from our side in 3 business days 🏃🏃
 
 [luciano@provi.com.br]: mailto:luciano@provi.com.br
 [gian@provi.com.br]: mailto:gian@provi.com.br
-[dev@provi.com.br]: mailto:dev@provi.com.br
+[dev@provi.com.br]: mai

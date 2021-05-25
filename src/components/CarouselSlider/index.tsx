@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useCarousel } from "../../hooks/useProviApi";
 
 import { KeenSlider } from "../KeenSlider";
-imsport { Container } from "./styles";
+import { Container } from "./styles";
 
 export function CarouselSlider() {
   const carouselData = useCarousel();

@@ -50,7 +50,7 @@ jest.mock("react-router-dom", () => {
   };
 });
 
-describe("Rendering landing container", () => {
+describe("Rendering Keen-slider/caroulsel on Landing container", () => {
   it("Show be able to render the carousel list", () => {
     render(<LandingContainer />);
     mockedCarousel.map((item) => {

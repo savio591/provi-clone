@@ -1,5 +1,6 @@
 # Provi Challenge
 [![Good Code Quality](https://github.com/savio591/provi-clone/actions/workflows/codeInspector.yml/badge.svg?branch=dev)](https://github.com/savio591/provi-clone/actions/workflows/codeInspector.yml)
+[![Unitary Tests](https://github.com/savio591/provi-clone/actions/workflows/jest.yml/badge.svg?branch=tests)](https://github.com/savio591/provi-clone/actions/workflows/jest.yml)
 
 My project consists in clone the landing page of [Provi].
 I want to use my habilities with Pure CSS, Javascript/Typescript, and ReactJS

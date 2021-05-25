@@ -16,7 +16,6 @@ import ld5i4Img from "../../assets/ld5i4.svg";
 import phoneGif from "../../assets/phone.gif";
 
 import { CarouselSlider } from "../CarouselSlider";
-import { useProviApi } from "../../hooks/useProviApi";
 
 export function LandingContainer() {
   return (

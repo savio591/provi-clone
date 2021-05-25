@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useCarousel } from "../../hooks/useProviApi";
 
 import { KeenSlider } from "../KeenSlider";
-import { Container } from "./styles";
+imsport { Container } from "./styles";
 
 export function CarouselSlider() {
   const carouselData = useCarousel();
@@ -17,7 +17,6 @@ export function CarouselSlider() {
   });
 
   useEffect(() => {
-    console.log({carouselRef, carousel})
     window.addEventListener("scroll", () => {
       if (innerWidth > 640) setScreenSize("desktop");
       else setScreenSize("small");

@@ -15,7 +15,6 @@ export function Header() {
   const [isPageScrolled, setIsPageScrolled] = useState(false);
   const [isToogledBurguerButton, setIsToogledBurguerButton] = useState(false);
   const navData = useNav();
-  console.log(navData)
 
   function handleBurguerButton() {
     setIsToogledBurguerButton(!isToogledBurguerButton);
@@ -56,7 +55,7 @@ export function Header() {
             if (item.type === "login") {
               return (
                 <li key={item.title}>
-                  <Link to={item.link} className="login">
+                  <Link to={item.link} className="login" data-testid="loginButton">
                     {item.title}
                   </Link>
                 </li>

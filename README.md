@@ -20,8 +20,6 @@ I want to use my abilities with Pure CSS, Javascript/Typescript, and ReactJS
 
 ## Starting the development
 
-* A deploy build is available on my [site](https://savilexperiments.com.br/provi-clone).
-
 * To serve on the local machine, install dependencies with ``yarn`` or ``npm`` and start with ``yarn dev`` or `npm run dev`. Webpack will serve the webpage on port ``9000``
 
 * To build, run `build` with yarn or npm. It will creates and pack up build on the `/dist` folder ready to deploy.

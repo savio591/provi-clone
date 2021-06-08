@@ -1,4 +1,5 @@
 # Provi Challenge
+[![wakatime](https://wakatime.com/badge/github/savio591/provi-clone.svg)](https://wakatime.com/badge/github/savio591/provi-clone)
 [![Good Code Quality](https://github.com/savio591/provi-clone/actions/workflows/codeInspector.yml/badge.svg?branch=dev)](https://github.com/savio591/provi-clone/actions/workflows/codeInspector.yml)
 [![Unitary Tests](https://github.com/savio591/provi-clone/actions/workflows/jest.yml/badge.svg?branch=tests)](https://github.com/savio591/provi-clone/actions/workflows/jest.yml)
 

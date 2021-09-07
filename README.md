@@ -8,7 +8,7 @@ I want to use my abilities with Pure CSS, Javascript/Typescript, and ReactJS
 
 ## Objectives:
 
-### Show my habilities with:
+### Show my abilities:
   * Create prototypes with [Figma]
   * Good domain of Git system and Github functionalities
   * HTML/CSS/JS knowledge

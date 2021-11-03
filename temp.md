@@ -1,0 +1,1 @@
+Logo, images, texts on this project are property of PROVI SOLUCOES E SERVICOS LTDA. By the way, it was allowed for use only if made for educational purposes.

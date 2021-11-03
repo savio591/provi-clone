@@ -10,6 +10,7 @@ import logoWideWhiteImg from "../../assets/logo_wide_white.svg";
 import arrowRightImg from "../../assets/arrowRight.svg";
 import burguerIconWhiteImg from "../../assets/burguer_white.svg";
 import burguerIconBlueImg from "../../assets/burguer_blue.svg";
+import { EduAlert } from "../EduAlert";
 
 export function Header() {
   const [isPageScrolled, setIsPageScrolled] = useState(false);
@@ -22,55 +23,66 @@ export function Header() {
 
   useEffect(() => {
     document.addEventListener("scroll", () => {
-      if (scrollY >= 100) {
+      if (scrollY > 100) {
         setIsPageScrolled(true);
-      } else setIsPageScrolled(false);
+        return;
+      }
+      if (scrollY == 0) {
+        setIsPageScrolled(false);
+      }
     });
   }, []);
 
   return (
-    <Container className={isPageScrolled ? "scrolled" : " "}>
-      <Link to="./">
-        <img
-          src={isPageScrolled ? logoWideBlueImg : logoWideWhiteImg}
-          alt="Logo"
-        />
-      </Link>
-      <button onClick={handleBurguerButton} className="clean burguer">
-        <img
-          src={isPageScrolled ? burguerIconBlueImg : burguerIconWhiteImg}
-          alt="Menu"
-        />
-      </button>
-      <Nav isActive={isToogledBurguerButton}>
-        <List className={isPageScrolled ? "scrolled" : " "}>
-          {navData.map((item) => {
-            if (item.type === "textLink") {
-              return (
-                <li key={item.title}>
-                  <Link to={item.link}>{item.title}</Link>
-                </li>
-              );
-            }
-            if (item.type === "login") {
-              return (
-                <li key={item.title}>
-                  <Link to={item.link} className="login" data-testid="loginButton">
-                    {item.title}
-                  </Link>
-                </li>
-              );
-            }
-          })}
-          <li>
-            <Link to="./">
-              <Button icon={arrowRightImg}>
-                <span>Transformar minha carreira</span>
-              </Button>
-            </Link>
-          </li>
-        </List>
-      </Nav>
-    </Container>
+    <>
+      <EduAlert hidden={isPageScrolled} />
+      <Container className={isPageScrolled ? "scrolled" : " "}>
+        <Link to="./">
+          <img
+            src={isPageScrolled ? logoWideBlueImg : logoWideWhiteImg}
+            alt="Logo"
+          />
+        </Link>
+        <button onClick={handleBurguerButton} className="clean burguer">
+          <img
+            src={isPageScrolled ? burguerIconBlueImg : burguerIconWhiteImg}
+            alt="Menu"
+          />
+        </button>
+        <Nav isActive={isToogledBurguerButton}>
+          <List className={isPageScrolled ? "scrolled" : " "}>
+            {navData.map((item) => {
+              if (item.type === "textLink") {
+                return (
+                  <li key={item.title}>
+                    <Link to={item.link}>{item.title}</Link>
+                  </li>
+                );
+              }
+              if (item.type === "login") {
+                return (
+                  <li key={item.title}>
+                    <Link
+                      to={item.link}
+                      className="login"
+                      data-testid="loginButton"
+                    >
+                      {item.title}
+                    </Link>
+                  </li>
+                );
+              }
+            })}
+            <li>
+              <Link to="./">
+                <Button icon={arrowRightImg}>
+                  <span>Transformar minha carreira</span>
+                </Button>
+              </Link>
+            </li>
+          </List>
+        </Nav>
+      </Container>
+    </>
   );
 }

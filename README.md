@@ -3,7 +3,7 @@
 [![Good Code Quality](https://github.com/savio591/provi-clone/actions/workflows/codeInspector.yml/badge.svg?branch=dev)](https://github.com/savio591/provi-clone/actions/workflows/codeInspector.yml)
 [![Unitary Tests](https://github.com/savio591/provi-clone/actions/workflows/jest.yml/badge.svg?branch=tests)](https://github.com/savio591/provi-clone/actions/workflows/jest.yml)
 
-My project consists of clone the landing page of [Provi].
+My project consists of remaking the [Provi] landing page.
 I want to use my abilities with Pure CSS, Javascript/Typescript, and ReactJS
 
 ## Objectives:
@@ -23,7 +23,7 @@ I want to use my abilities with Pure CSS, Javascript/Typescript, and ReactJS
 
 * To serve on the local machine, install dependencies with ``yarn`` or ``npm`` and start with ``yarn dev`` or `npm run dev`. Webpack will serve the webpage on port ``9000``
 
-* To build, run `build` with yarn or npm. It will creates and pack up build on the `/dist` folder ready to deploy.
+* To build, run `build` with yarn or npm. It will create and pack up build on the `/dist` folder ready to deploy.
 
 
 
@@ -47,6 +47,9 @@ The prototype created on Figma is [here](https://www.figma.com/file/wUBzhofzIoWj
 
 ## Faqs:
 * Why isn't used CRA or other boilerplates? **Hardware Limitations.**
+
+
+Todos os direitos reservados à **PROVI SOLUCOES E SERVICOS LTDA** - 2021
 
 
 [Figma]: https://www.figma.com/

@@ -5,7 +5,7 @@
   "main": "/src/index.tsx",
   "repository": "https://github.com/savio591/provi-clone",
   "author": "savio591 <savio591@hotmail.com>",
-  "license": "Mozilla Public License",
+  "license": "MPL-2.0",
   "scripts": {
     "dev": "webpack serve",
     "build": "cross-env NODE_ENV=production webpack",
